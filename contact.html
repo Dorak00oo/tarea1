@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto - TechComponents</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header con navegación principal -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-logo">TechComponents</h1>
+                <nav class="site-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="gallery.html" class="nav-link">Galería</a></li>
+                        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Sección de contacto -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="page-title">Contáctanos</h2>
+                <p class="contact-intro">¿Necesitas asesoramiento técnico o tienes alguna consulta? Estamos aquí para ayudarte</p>
+                
+                <div class="contact-content">
+                    <!-- Formulario de contacto -->
+                    <div class="contact-form-container">
+                        <h3 class="form-title">Envíanos un Mensaje</h3>
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nombre completo *</label>
+                                <input type="text" id="name" name="name" class="form-input" required 
+                                       placeholder="Ingresa tu nombre completo">
+                                <small class="form-help">Campo obligatorio</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Correo electrónico *</label>
+                                <input type="email" id="email" name="email" class="form-input" required 
+                                       placeholder="tu@email.com">
+                                <small class="form-help">Campo obligatorio</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" 
+                                       placeholder="+1 (555) 123-4567">
+                                <small class="form-help">Opcional</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Asunto *</label>
+                                <select id="subject" name="subject" class="form-select" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="consulta-general">Consulta General</option>
+                                    <option value="presupuesto-pc">Presupuesto para PC</option>
+                                    <option value="servicio-tecnico">Servicio Técnico</option>
+                                    <option value="garantia">Garantía</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <small class="form-help">Campo obligatorio</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensaje *</label>
+                                <textarea id="message" name="message" class="form-textarea" required 
+                                          placeholder="Describe tu consulta o necesidad..." rows="5"></textarea>
+                                <small class="form-help">Campo obligatorio - Mínimo 10 caracteres</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" class="form-checkbox">
+                                    <span class="checkbox-text">Deseo recibir información sobre nuevos productos y ofertas</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                                <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Información de contacto -->
+                    <div class="contact-info">
+                        <h3 class="info-title">Información de Contacto</h3>
+                        
+                        <div class="info-item">
+                            <h4 class="info-label">Dirección</h4>
+                            <p class="info-text">Av. Tecnología 123, Zona Tech<br>Ciudad, Estado 12345</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h4 class="info-label">Teléfono</h4>
+                            <p class="info-text">+1 (555) 123-TECH<br>Lunes a Viernes: 9:00 - 18:00</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h4 class="info-label">Email</h4>
+                            <p class="info-text">info@techcomponents.com<br>soporte@techcomponents.com</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h4 class="info-label">Horarios de Atención</h4>
+                            <p class="info-text">
+                                Lunes - Viernes: 9:00 - 18:00<br>
+                                Sábados: 10:00 - 16:00<br>
+                                Domingos: Cerrado
+                            </p>
+                        </div>
+                        
+                        <div class="social-contact">
+                            <h4 class="info-label">Síguenos en Redes</h4>
+                            <div class="social-buttons">
+                                <a href="#" class="social-btn facebook">Facebook</a>
+                                <a href="#" class="social-btn twitter">Twitter</a>
+                                <a href="#" class="social-btn instagram">Instagram</a>
+                                <a href="#" class="social-btn youtube">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TechComponents</h3>
+                    <p class="footer-text">Especialistas en componentes de computador de alta calidad.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Redes Sociales</h4>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                        <li><a href="#" class="social-link">Instagram</a></li>
+                        <li><a href="#" class="social-link">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 TechComponents. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
