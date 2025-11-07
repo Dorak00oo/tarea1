@@ -1,0 +1,111 @@
+/*
+ * Pricing block
+ */
+
+.pricing {
+  padding: var(--space-3xl) var(--space-md);
+  background-color: var(--color-surface-soft);
+}
+
+.pricing__grid {
+  display: grid;
+  gap: var(--space-xl);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.pricing-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.pricing-card--featured {
+  border: 2px solid var(--color-primary);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(37, 99, 235, 0.04));
+}
+
+.pricing-card__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: rgba(37, 99, 235, 0.12);
+  border-radius: 999px;
+  padding: var(--space-2xs) var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.pricing-card--featured .pricing-card__badge {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: var(--color-accent);
+}
+
+.pricing-card__name {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.pricing-card__price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.pricing-card__currency {
+  font-size: 1.25rem;
+  margin-right: 0.2em;
+}
+
+.pricing-card__label {
+  color: var(--color-text-subtle);
+  font-size: var(--font-size-sm);
+}
+
+.pricing-card__features {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.pricing-card__feature {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--color-text);
+}
+
+.pricing-card__feature::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-round);
+  background: var(--color-success);
+}
+
+.pricing-card__actions {
+  margin-top: auto;
+}
+
+@media (min-width: 900px) {
+  .pricing__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+

@@ -1,0 +1,87 @@
+8. Actividad practica 
+Descripción del Proyecto
+Crear una landing page completa para un producto/servicio aplicando TODOS los conceptos de BEM aprendidos.
+Requisitos Obligatorios
+La landing page debe incluir:
+
+1. Header (cabecera)
+   • Logo
+   • Menú de navegación con estados
+   • Botón de call-to-action
+
+2. Hero Section (sección principal)
+   • Título principal
+   • Subtítulo descriptivo
+   • Imagen o video de fondo
+   • Botón de acción principal
+
+3. Features Section (características)
+   • Al menos 3 tarjetas de características
+   • Cada una con ícono, título y descripción
+   • Variación destacada para la característica principal
+
+4. Testimonials (testimonios)
+   • Carrusel o grid de testimonios
+   • Avatar, nombre, cargo y comentario
+   • Diferentes variaciones de diseño
+
+5. Pricing Section (precios)
+   • Al menos 3 planes de precios
+   • Plan destacado/recomendado
+   • Lista de características de cada plan
+
+6. Contact Form (formulario de contacto)
+   • Campos: nombre, email, mensaje
+   • Validación visual de errores (required)
+
+
+7. Footer (pie de página)
+   • Información de contacto
+   • Enlaces de navegación
+   • Redes sociales
+   • Copyright
+
+
+
+Entregables
+1. Código HTML complete (github)
+2. Archivos CSS organizados por componentes
+3. Documento explicativo justificando las decisiones de diseño BEM
+
+Tips para el proyecto 
+Nomenclatura consistente: Mantén un documento con todos los nombres de bloques y elementos
+
+Reutilización: Si ves patrones repetidos, créalos como bloques independientes
+
+Testing: Prueba cada componente en diferentes contextos para verificar independencia
+
+Documenta: Explica por qué tomaste cada decisión de nomenclatura
+
+9. CONCLUSIÓN
+La metodología BEM es una herramienta poderosa que mejora significativamente la organización, mantenibilidad y escalabilidad de proyectos CSS. Aunque puede parecer verbosa al principio, sus beneficios se hacen evidentes en proyectos medianos y grandes.
+
+Beneficios clave de implementar BEM:
+• Código más predecible y fácil de mantener
+• Mejor colaboración en equipos de desarrollo
+• Reducción de conflictos de CSS
+• Transición natural a frameworks modernos
+• Base sólida para arquitecturas CSS escalables
+
+La clave del éxito con BEM está en la consistencia. No es necesario seguir cada regla al pie de la letra, pero sí mantener un enfoque coherente a lo largo de todo el proyecto.
+
+"Es más importante tener un concepto consistente que perderse buscando el perfecto."
+
+Subiendo a producción un proyecto html y css: https://share.vidyard.com/watch/seW9oSFTBDqijiUB5TwQKb 
+
+
+Subiendo a produccion un proyecto con html y css a vercel e infinityfree
+
+
+Infinityfree: https://www.infinityfree.com/#google_vignette 
+Vercel: https://vercel.com/ 
+Netlify: https://www.netlify.com/ 
+
+
+https://loginmvc.rf.gd/ 
+
+https://ferre.vercel.app/#productos 

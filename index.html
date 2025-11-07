@@ -3,143 +3,123 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TechComponents - Componentes de Computador</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>TechComponents | Componentes de alto rendimiento</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/hero.css">
+    <link rel="stylesheet" href="css/blocks/features.css">
+    <link rel="stylesheet" href="css/blocks/testimonials.css">
+    <link rel="stylesheet" href="css/blocks/pricing.css">
+    <link rel="stylesheet" href="css/blocks/contact.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
 </head>
-<body>
-    <!-- Header con navegación principal -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="site-logo">TechComponents</h1>
-                <nav class="site-nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="nav-link active">Inicio</a></li>
-                        <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
-                        <li><a href="gallery.html" class="nav-link">Galería</a></li>
-                        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                        <li><a href="blog.html" class="nav-link">Blog</a></li>
-                        <li><a href="contact.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
+<body class="landing-page">
+    <header class="landing-header" id="inicio">
+        <div class="landing-header__inner">
+            <a class="landing-header__logo" href="index.html">TechComponents</a>
+            <nav class="primary-nav landing-header__nav" aria-label="Navegación principal">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__item"><a class="primary-nav__link primary-nav__link--active" href="index.html">Inicio</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="about.html">Sobre nosotros</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="servicios.html">Servicios</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="gallery.html">Galería</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="blog.html">Blog</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="landing-header__actions">
+                <a class="button button--primary" href="servicios.html">Solicitar Plan</a>
             </div>
         </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="main-content">
-        <!-- Sección hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2 class="hero-title">Componentes de Computador de Alta Calidad</h2>
-                    <p class="hero-subtitle">Descubre los mejores procesadores, tarjetas gráficas y componentes para tu PC gaming o profesional</p>
-                    <a href="servicios.html" class="btn btn-primary">Ver Servicios</a>
+    <main class="landing-main">
+        <section class="hero-banner hero-banner--with-media" id="hero">
+            <div class="hero-banner__overlay" aria-hidden="true"></div>
+            <div class="hero-banner__content">
+                <p class="hero-banner__eyebrow">Soluciones profesionales</p>
+                <h1 class="hero-banner__title">Componentes de computador de alto rendimiento para cada desafío</h1>
+                <p class="hero-banner__subtitle">Diseñamos configuraciones personalizadas para gaming, estudios creativos y empresas que requieren potencia sin compromisos.</p>
+                <div class="hero-banner__actions">
+                    <a class="button button--primary" href="servicios.html">Explorar servicios</a>
+                    <a class="button button--ghost" href="contact.html">Habla con un especialista</a>
                 </div>
             </div>
         </section>
 
-        <!-- Tarjetas destacadas -->
-        <section class="featured-cards">
-            <div class="container">
-                <h2 class="section-title">Componentes Destacados</h2>
-                <div class="cards-grid">
-                    <article class="card">
-                        <div class="card-image">
-                            <img src="assets/imagenes/procesador.jpg" alt="Procesador Intel Core i9" class="card-img">
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Procesadores</h3>
-                            <p class="card-description">Los mejores procesadores Intel y AMD para gaming, trabajo y creatividad.</p>
-                            <a href="servicios.html" class="btn btn-secondary">Más Info</a>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-image">
-                            <img src="assets/imagenes/grafica.webp" alt="Tarjeta gráfica RTX 4080" class="card-img">
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Tarjetas Gráficas</h3>
-                            <p class="card-description">RTX 40 series y RX 7000 series para la mejor experiencia gaming y rendering.</p>
-                            <a href="servicios.html" class="btn btn-secondary">Más Info</a>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-image">
-                            <img src="assets/imagenes/placa-base.jpg" alt="Placa base gaming" class="card-img">
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Placas Base</h3>
-                            <p class="card-description">Motherboards de última generación con conectividad avanzada y overclocking.</p>
-                            <a href="servicios.html" class="btn btn-secondary">Más Info</a>
-                        </div>
-                    </article>
-                </div>
+        <section class="feature-section" id="caracteristicas">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Lo que nos diferencia</p>
+                <h2 class="section-heading__title">Tecnología pensada para rendir al máximo</h2>
+                <p class="section-heading__description">Seleccionamos, ensamblamos y validamos cada componente con estándares de laboratorio para garantizar estabilidad y desempeño sostenido.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card feature-card--highlight">
+                    <span class="feature-card__icon" aria-hidden="true">⚡</span>
+                    <h3 class="feature-card__title">Optimización extrema</h3>
+                    <p class="feature-card__description">Curva térmica calibrada, perfiles XMP validados y desempeño probado en stress tests continuos.</p>
+                    <ul class="feature-card__list">
+                        <li class="feature-card__list-item">Monitoreo 24h</li>
+                        <li class="feature-card__list-item">Garantía extendida</li>
+                        <li class="feature-card__list-item">Reportes trimestrales</li>
+                    </ul>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-card__icon" aria-hidden="true">🧠</span>
+                    <h3 class="feature-card__title">Arquitectura inteligente</h3>
+                    <p class="feature-card__description">Topologías balanceadas para minimizar latencia y maximizar la eficiencia energética.</p>
+                    <ul class="feature-card__list">
+                        <li class="feature-card__list-item">Selección de VRM premium</li>
+                        <li class="feature-card__list-item">Compatibilidad PCIe 5.0</li>
+                        <li class="feature-card__list-item">Perfilado de firmware</li>
+                    </ul>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-card__icon" aria-hidden="true">🛡️</span>
+                    <h3 class="feature-card__title">Soporte continuo</h3>
+                    <p class="feature-card__description">Equipo técnico disponible los 7 días para mantenimiento preventivo y correctivo.</p>
+                    <ul class="feature-card__list">
+                        <li class="feature-card__list-item">Mesa de ayuda 24/7</li>
+                        <li class="feature-card__list-item">Reposición inmediata</li>
+                        <li class="feature-card__list-item">Capacitación remota</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <!-- Tabla de especificaciones -->
-        <section class="specs-section">
-            <div class="container">
-                <h2 class="section-title">Especificaciones Técnicas</h2>
-                <div class="table-container">
-                    <table class="specs-table">
-                        <thead>
-                            <tr>
-                                <th>Componente</th>
-                                <th>Modelo</th>
-                                <th>Precio</th>
-                                <th>Stock</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Procesador</td>
-                                <td>Intel Core i9-13900K</td>
-                                <td>$599</td>
-                                <td>Disponible</td>
-                            </tr>
-                            <tr>
-                                <td>Gráfica</td>
-                                <td>RTX 4080</td>
-                                <td>$1199</td>
-                                <td>Disponible</td>
-                            </tr>
-                            <tr>
-                                <td>RAM</td>
-                                <td>32GB DDR5</td>
-                                <td>$299</td>
-                                <td>Disponible</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">TechComponents</h3>
-                    <p class="footer-text">Especialistas en componentes de computador de alta calidad.</p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Redes Sociales</h4>
-                    <ul class="social-links">
-                        <li><a href="#" class="social-link">Facebook</a></li>
-                        <li><a href="#" class="social-link">Twitter</a></li>
-                        <li><a href="#" class="social-link">Instagram</a></li>
-                        <li><a href="#" class="social-link">YouTube</a></li>
-                    </ul>
-                </div>
+    <footer class="landing-footer">
+        <div class="landing-footer__inner">
+            <div class="landing-footer__about">
+                <a class="landing-footer__logo" href="index.html">TechComponents</a>
+                <p class="landing-footer__text">Arquitecturas de hardware de alto rendimiento diseñadas con estándares de ingeniería.</p>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2024 TechComponents. Todos los derechos reservados.</p>
+            <div class="landing-footer__links">
+                <h3 class="landing-footer__title">Navegación</h3>
+                <ul class="landing-footer__nav-list">
+                    <li class="landing-footer__nav-item">Inicio</li>
+                    <li class="landing-footer__nav-item">Sobre nosotros</li>
+                    <li class="landing-footer__nav-item">Servicios</li>
+                    <li class="landing-footer__nav-item">Galería</li>
+                    <li class="landing-footer__nav-item">Blog</li>
+                    <li class="landing-footer__nav-item">Contacto</li>
+                </ul>
+            </div>
+            <div class="landing-footer__social">
+                <h3 class="landing-footer__title">Redes</h3>
+                <ul class="landing-footer__social-list">
+                    <li class="landing-footer__social-item">LinkedIn</li>
+                    <li class="landing-footer__social-item">Twitter</li>
+                    <li class="landing-footer__social-item">YouTube</li>
+                    <li class="landing-footer__social-item">Instagram</li>
+                </ul>
+            </div>
+            <div class="landing-footer__legal">
+                <h3 class="landing-footer__title">Atención</h3>
+                <p class="landing-footer__text">support@techcomponents.com<br>+1 (555) 123-TECH</p>
+                <p class="landing-footer__text">© 2024 TechComponents. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

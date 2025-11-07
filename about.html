@@ -4,136 +4,191 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sobre Nosotros - TechComponents</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/hero.css">
+    <link rel="stylesheet" href="css/blocks/features.css">
+    <link rel="stylesheet" href="css/blocks/testimonials.css">
+    <link rel="stylesheet" href="css/blocks/about.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
 </head>
-<body>
-    <!-- Header con navegación principal -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="site-logo">TechComponents</h1>
-                <nav class="site-nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="nav-link">Inicio</a></li>
-                        <li><a href="about.html" class="nav-link active">Sobre Nosotros</a></li>
-                        <li><a href="gallery.html" class="nav-link">Galería</a></li>
-                        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                        <li><a href="blog.html" class="nav-link">Blog</a></li>
-                        <li><a href="contact.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
+<body class="landing-page">
+    <header class="landing-header">
+        <div class="landing-header__inner">
+            <a class="landing-header__logo" href="index.html">TechComponents</a>
+            <nav class="primary-nav landing-header__nav" aria-label="Navegación principal">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="index.html">Inicio</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link primary-nav__link--active" href="about.html">Sobre nosotros</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="servicios.html">Servicios</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="gallery.html">Galería</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="blog.html">Blog</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="landing-header__actions">
+                <a class="button button--primary" href="contact.html">Habla con un especialista</a>
             </div>
         </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="main-content">
-        <!-- Sección sobre el proyecto -->
-        <section class="about-section">
-            <div class="container">
-                <h2 class="page-title">Sobre TechComponents</h2>
-                <div class="about-content">
-                    <p class="about-text">
-                        TechComponents es una empresa especializada en la venta y distribución de componentes de computador de alta calidad. 
-                        Nuestra misión es proporcionar a nuestros clientes los mejores productos tecnológicos para satisfacer sus necesidades 
-                        de gaming, trabajo profesional y creatividad digital.
-                    </p>
-                    <p class="about-text">
-                        Con más de 10 años de experiencia en el sector, hemos construido una reputación sólida basada en la calidad, 
-                        el servicio al cliente y la innovación tecnológica. Trabajamos directamente con los principales fabricantes 
-                        para ofrecer los productos más recientes y competitivos del mercado.
-                    </p>
+    <main class="landing-main">
+        <section class="hero-banner hero-banner--soft">
+            <div class="hero-banner__overlay" aria-hidden="true"></div>
+            <div class="hero-banner__content">
+                <p class="hero-banner__eyebrow">Quiénes somos</p>
+                <h1 class="hero-banner__title">Especialistas en hardware que impulsan tu negocio</h1>
+                <p class="hero-banner__subtitle">Combinamos ingeniería, monitoreo continuo y soporte estratégico para que la tecnología nunca detenga tus proyectos.</p>
+                <div class="hero-banner__actions">
+                    <a class="button button--ghost" href="servicios.html">Ver servicios</a>
+                    <a class="button button--primary" href="contact.html">Agenda una llamada</a>
                 </div>
             </div>
         </section>
 
-        <!-- Objetivos del proyecto -->
-        <section class="objectives-section">
-            <div class="container">
-                <h2 class="section-title">Nuestros Objetivos</h2>
-                <ul class="objectives-list">
-                    <li class="objective-item">
-                        <h3 class="objective-title">Calidad Garantizada</h3>
-                        <p class="objective-description">Ofrecer únicamente componentes de marcas reconocidas con garantía oficial.</p>
-                    </li>
-                    <li class="objective-item">
-                        <h3 class="objective-title">Precios Competitivos</h3>
-                        <p class="objective-description">Mantener los mejores precios del mercado sin comprometer la calidad.</p>
-                    </li>
-                    <li class="objective-item">
-                        <h3 class="objective-title">Soporte Técnico</h3>
-                        <p class="objective-description">Proporcionar asesoramiento técnico especializado para cada proyecto.</p>
-                    </li>
-                    <li class="objective-item">
-                        <h3 class="objective-title">Innovación Constante</h3>
-                        <p class="objective-description">Mantenernos actualizados con las últimas tecnologías y tendencias del mercado.</p>
-                    </li>
-                </ul>
+        <section class="story">
+            <div class="story__wrapper">
+                <div class="story__content">
+                    <p class="story__lead">TechComponents nació hace más de una década con la misión de acercar infraestructura de alto rendimiento a equipos creativos, gamers y empresas que dependen de la tecnología para crecer.</p>
+                    <p class="story__paragraph">Operamos como partner tecnológico: seleccionamos componentes certificados, configuramos arquitecturas personalizadas y acompañamos la evolución de cada cliente con soporte preventivo. Nuestro laboratorio interno replica escenarios de uso real para validar estabilidad antes de cada entrega.</p>
+                </div>
+                <aside class="story__highlights">
+                    <h2 class="story__title">Lo que nos define</h2>
+                    <ul class="story__list">
+                        <li class="story__item">Integraciones directas con fabricantes líderes</li>
+                        <li class="story__item">Protocolos de QA automatizados en cada ensamblaje</li>
+                        <li class="story__item">Cobertura de soporte global 24/7</li>
+                    </ul>
+                </aside>
             </div>
         </section>
 
-        <!-- Equipo -->
-        <section class="team-section">
-            <div class="container">
-                <h2 class="section-title">Nuestro Equipo</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-icon">
-                            <span class="user-icon">👨‍💻</span>
-                        </div>
-                        <div class="member-info">
-                            <h3 class="member-name">Carlos Mendoza</h3>
-                            <p class="member-role">Director Técnico</p>
-                            <p class="member-description">Especialista en hardware con 15 años de experiencia en ensamblaje y optimización de PCs.</p>
-                        </div>
-                    </div>
+        <section class="mission">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Principios</p>
+                <h2 class="section-heading__title">Cómo garantizamos resultados medibles</h2>
+                <p class="section-heading__description">Nuestro modelo combina mejores prácticas de ingeniería con acompañamiento cercano para entregar proyectos listos para producción.</p>
+            </div>
+            <ul class="mission__list">
+                <li class="mission__item">
+                    <h3 class="mission__title">Calidad certificada</h3>
+                    <p class="mission__description">Trabajamos con hardware de marcas reconocidas, pruebas de estrés de 48 h y documentación completa.</p>
+                </li>
+                <li class="mission__item">
+                    <h3 class="mission__title">Escalabilidad</h3>
+                    <p class="mission__description">Nuestros diseños contemplan crecimiento modular, redundancia y compatibilidad con estándares emergentes.</p>
+                </li>
+                <li class="mission__item">
+                    <h3 class="mission__title">Soporte especializado</h3>
+                    <p class="mission__description">Ingenieros senior disponibles para incidencias críticas, mantenimiento preventivo y capacitaciones.</p>
+                </li>
+                <li class="mission__item">
+                    <h3 class="mission__title">Innovación constante</h3>
+                    <p class="mission__description">Actualizamos catálogos trimestralmente y probamos nuevas arquitecturas en nuestro laboratorio.</p>
+                </li>
+            </ul>
+        </section>
 
-                    <div class="team-member">
-                        <div class="member-icon">
-                            <span class="user-icon">👩‍💻</span>
-                        </div>
-                        <div class="member-info">
-                            <h3 class="member-name">Ana García</h3>
-                            <p class="member-role">Especialista en Gaming</p>
-                            <p class="member-description">Experta en configuraciones gaming y overclocking. Gamer profesional y reviewer de hardware.</p>
-                        </div>
+        <section class="team">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Equipo</p>
+                <h2 class="section-heading__title">Especialistas detrás de cada implementación</h2>
+                <p class="section-heading__description">Un equipo multidisciplinar que cubre ingeniería, experiencia gamer y estrategia comercial.</p>
+            </div>
+            <div class="team__grid">
+                <article class="team-card">
+                    <div class="team-card__avatar" aria-hidden="true">CM</div>
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">Carlos Mendoza</h3>
+                        <p class="team-card__role">Director Técnico</p>
+                        <p class="team-card__bio">15 años liderando ensamblaje de gran escala. Especialista en optimización térmica y automatización.</p>
                     </div>
+                </article>
+                <article class="team-card">
+                    <div class="team-card__avatar" aria-hidden="true">AG</div>
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">Ana García</h3>
+                        <p class="team-card__role">Especialista en Gaming</p>
+                        <p class="team-card__bio">Referente regional en eSports. Diseña rigs competitivos con monitorización en tiempo real.</p>
+                    </div>
+                </article>
+                <article class="team-card">
+                    <div class="team-card__avatar" aria-hidden="true">MT</div>
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">Miguel Torres</h3>
+                        <p class="team-card__role">Asesor Comercial</p>
+                        <p class="team-card__bio">Especialista en soluciones corporativas y continuidad operativa para compañías globales.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                    <div class="team-member">
-                        <div class="member-icon">
-                            <span class="user-icon">👨‍💼</span>
-                        </div>
-                        <div class="member-info">
-                            <h3 class="member-name">Miguel Torres</h3>
-                            <p class="member-role">Asesor Comercial</p>
-                            <p class="member-description">Especialista en soluciones empresariales y configuraciones profesionales para empresas.</p>
-                        </div>
+        <section class="testimonials">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Casos reales</p>
+                <h2 class="section-heading__title">Clientes que ya confían en TechComponents</h2>
+                <p class="section-heading__description">Empresas, creadores de contenido y equipos de esports que necesitan hardware listo para competir.</p>
+            </div>
+            <div class="testimonials__grid">
+                <article class="testimonial-card testimonial-card--accent">
+                    <div class="testimonial-card__avatar" aria-hidden="true">CR</div>
+                    <div class="testimonial-card__body">
+                        <h3 class="testimonial-card__name">Carla Ruiz</h3>
+                        <p class="testimonial-card__role">Directora de Tecnología · PixelWave Studio</p>
+                        <p class="testimonial-card__quote">“El flujo de trabajo en renderizado se aceleró un 43%. El soporte anticipa nuestras necesidades antes de cualquier entrega crítica.”</p>
                     </div>
-                </div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-card__avatar" aria-hidden="true">LM</div>
+                    <div class="testimonial-card__body">
+                        <h3 class="testimonial-card__name">Luis Moreno</h3>
+                        <p class="testimonial-card__role">Head Coach · Nova eSports</p>
+                        <p class="testimonial-card__quote">“El rendimiento se mantiene estable durante entrenamientos de 10 horas. Las soluciones térmicas personalizadas marcaron la diferencia.”</p>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-card__avatar" aria-hidden="true">AG</div>
+                    <div class="testimonial-card__body">
+                        <h3 class="testimonial-card__name">Ana Gómez</h3>
+                        <p class="testimonial-card__role">Fundadora · Agencia Creativa Raster</p>
+                        <p class="testimonial-card__quote">“El dashboard de monitoreo nos permite planificar mantenimientos y evitar tiempos muertos costosos.”</p>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">TechComponents</h3>
-                    <p class="footer-text">Especialistas en componentes de computador de alta calidad.</p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Redes Sociales</h4>
-                    <ul class="social-links">
-                        <li><a href="#" class="social-link">Facebook</a></li>
-                        <li><a href="#" class="social-link">Twitter</a></li>
-                        <li><a href="#" class="social-link">Instagram</a></li>
-                        <li><a href="#" class="social-link">YouTube</a></li>
-                    </ul>
-                </div>
+    <footer class="landing-footer">
+        <div class="landing-footer__inner">
+            <div class="landing-footer__about">
+                <a class="landing-footer__logo" href="index.html">TechComponents</a>
+                <p class="landing-footer__text">Arquitecturas de hardware de alto rendimiento diseñadas con estándares de ingeniería.</p>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2024 TechComponents. Todos los derechos reservados.</p>
+            <div class="landing-footer__links">
+                <h3 class="landing-footer__title">Navegación</h3>
+                <ul class="landing-footer__nav-list">
+                    <li class="landing-footer__nav-item">Inicio</li>
+                    <li class="landing-footer__nav-item">Sobre nosotros</li>
+                    <li class="landing-footer__nav-item">Servicios</li>
+                    <li class="landing-footer__nav-item">Galería</li>
+                    <li class="landing-footer__nav-item">Blog</li>
+                    <li class="landing-footer__nav-item">Contacto</li>
+                </ul>
+            </div>
+            <div class="landing-footer__social">
+                <h3 class="landing-footer__title">Redes</h3>
+                <ul class="landing-footer__social-list">
+                    <li class="landing-footer__social-item">LinkedIn</li>
+                    <li class="landing-footer__social-item">Twitter</li>
+                    <li class="landing-footer__social-item">YouTube</li>
+                    <li class="landing-footer__social-item">Instagram</li>
+                </ul>
+            </div>
+            <div class="landing-footer__legal">
+                <h3 class="landing-footer__title">Atención</h3>
+                <p class="landing-footer__text">support@techcomponents.com<br>+1 (555) 123-TECH</p>
+                <p class="landing-footer__text">© 2024 TechComponents. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

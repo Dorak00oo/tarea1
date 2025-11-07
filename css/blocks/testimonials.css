@@ -1,0 +1,101 @@
+/*
+ * Testimonials block
+ */
+
+.testimonials {
+  padding: var(--space-3xl) var(--space-md);
+  background-color: rgba(15, 23, 42, 0.96);
+  color: var(--color-surface);
+}
+
+.testimonials .section-heading__title {
+  color: var(--color-surface);
+}
+
+.testimonials .section-heading__description {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.testimonials__grid {
+  display: grid;
+  gap: var(--space-xl);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.testimonial-card {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  background-color: rgba(15, 23, 42, 0.7);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.5);
+}
+
+.testimonial-card--accent {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.35), rgba(59, 130, 246, 0.22));
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+.testimonial-card__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-round);
+  background: rgba(255, 255, 255, 0.14);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.testimonial-card--accent .testimonial-card__avatar {
+  background: rgba(245, 158, 11, 0.3);
+}
+
+.testimonial-card__name {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-2xs);
+}
+
+.testimonial-card__role {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: var(--space-sm);
+}
+
+.testimonial-card__quote {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-card__avatar {
+    margin-bottom: var(--space-sm);
+  }
+}
+
+@media (min-width: 900px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+

@@ -1,0 +1,96 @@
+/*
+ * Feature section block
+ */
+
+.feature-section {
+  padding: var(--space-3xl) var(--space-md);
+  background-color: var(--color-surface);
+}
+
+.feature-grid {
+  display: grid;
+  gap: var(--space-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.feature-card {
+  background-color: var(--color-surface-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-card--highlight {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
+  border: 1px solid rgba(37, 99, 235, 0.25);
+}
+
+.feature-card__icon {
+  font-size: 2.5rem;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-round);
+  display: grid;
+  place-items: center;
+  background-color: rgba(37, 99, 235, 0.12);
+  color: var(--color-primary);
+}
+
+.feature-card--highlight .feature-card__icon {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: var(--color-accent);
+}
+
+.feature-card__title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+
+.feature-card__description {
+  color: var(--color-text-subtle);
+}
+
+.feature-card__list {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.feature-card__list-item {
+  color: var(--color-text);
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: var(--font-size-base);
+}
+
+.feature-card__list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-round);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.feature-card--highlight .feature-card__list-item::before {
+  background: linear-gradient(135deg, var(--color-accent) 0%, #f97316 100%);
+}
+
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+

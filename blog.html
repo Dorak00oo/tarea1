@@ -4,169 +4,175 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog - TechComponents</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/hero.css">
+    <link rel="stylesheet" href="css/blocks/blog.css">
+    <link rel="stylesheet" href="css/blocks/contact.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
 </head>
-<body>
-    <!-- Header con navegación principal -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="site-logo">TechComponents</h1>
-                <nav class="site-nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="nav-link">Inicio</a></li>
-                        <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
-                        <li><a href="gallery.html" class="nav-link">Galería</a></li>
-                        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                        <li><a href="blog.html" class="nav-link active">Blog</a></li>
-                        <li><a href="contact.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
+<body class="landing-page">
+    <header class="landing-header">
+        <div class="landing-header__inner">
+            <a class="landing-header__logo" href="index.html">TechComponents</a>
+            <nav class="primary-nav landing-header__nav" aria-label="Navegación principal">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="index.html">Inicio</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="about.html">Sobre nosotros</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="servicios.html">Servicios</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="gallery.html">Galería</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link primary-nav__link--active" href="blog.html">Blog</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="landing-header__actions">
+                <a class="button button--primary" href="contact.html">Solicitar asesoría</a>
             </div>
         </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="main-content">
-        <!-- Sección del blog -->
-        <section class="blog-section">
-            <div class="container">
-                <h2 class="page-title">Blog Tecnológico</h2>
-                <p class="blog-intro">Mantente informado sobre las últimas tendencias en tecnología y componentes de computador</p>
-                
-                <div class="blog-grid">
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <span class="blog-emoji">💻</span>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <time class="blog-date" datetime="2024-01-15">15 de Enero, 2024</time>
-                                <span class="blog-category">Hardware</span>
-                            </div>
-                            <h3 class="blog-title">Guía Completa: Procesadores Intel vs AMD 2024</h3>
-                            <p class="blog-excerpt">
-                                Analizamos las diferencias entre los procesadores Intel Core 14th Gen y AMD Ryzen 7000 series. 
-                                Descubre cuál es la mejor opción para gaming, trabajo profesional y creatividad.
-                            </p>
-                            <a href="#" class="blog-link">Leer más</a>
-                        </div>
-                    </article>
+    <main class="landing-main">
+        <section class="hero-banner hero-banner--soft">
+            <div class="hero-banner__overlay" aria-hidden="true"></div>
+            <div class="hero-banner__content">
+                <p class="hero-banner__eyebrow">Blog tecnológico</p>
+                <h1 class="hero-banner__title">Insights, guías y tendencias sobre hardware profesional</h1>
+                <p class="hero-banner__subtitle">Publicamos análisis profundos, guías prácticas y comparativas para ayudarte a elegir la mejor solución.</p>
+                <div class="hero-banner__actions">
+                    <a class="button button--primary" href="#articulos">Leer artículos</a>
+                    <a class="button button--ghost" href="contact.html">Habla con un experto</a>
+                </div>
+            </div>
+        </section>
 
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <span class="blog-emoji">🎮</span>
+        <section class="blog" id="articulos">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Últimas publicaciones</p>
+                <h2 class="section-heading__title">Aprende con el equipo de TechComponents</h2>
+                <p class="section-heading__description">Información curada por ingenieros, especialistas en gaming y consultores empresariales.</p>
+            </div>
+            <div class="blog__grid">
+                <article class="blog-card">
+                    <div class="blog-card__media" aria-hidden="true">💻</div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <time class="blog-card__date" datetime="2024-01-15">15 de enero, 2024</time>
+                            <span class="blog-card__category">Hardware</span>
                         </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <time class="blog-date" datetime="2024-01-10">10 de Enero, 2024</time>
-                                <span class="blog-category">Gaming</span>
-                            </div>
-                            <h3 class="blog-title">RTX 40 Series: ¿Vale la Pena la Actualización?</h3>
-                            <p class="blog-excerpt">
-                                Evaluamos el rendimiento de las nuevas tarjetas gráficas NVIDIA RTX 4080 y RTX 4090. 
-                                Comparativa de precios, rendimiento y eficiencia energética.
-                            </p>
-                            <a href="#" class="blog-link">Leer más</a>
+                        <h3 class="blog-card__title">Intel vs AMD 2024: cómo elegir el procesador adecuado</h3>
+                        <p class="blog-card__excerpt">Comparamos arquitectura, rendimiento en cargas mixtas y consumo energético para gaming, creatividad y entornos corporativos.</p>
+                        <a class="blog-card__link" href="#">Leer más</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-card__media" aria-hidden="true">🎮</div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <time class="blog-card__date" datetime="2024-01-10">10 de enero, 2024</time>
+                            <span class="blog-card__category">Gaming</span>
                         </div>
-                    </article>
+                        <h3 class="blog-card__title">RTX 40 Series: ¿vale la pena actualizar ahora?</h3>
+                        <p class="blog-card__excerpt">Análisis de la serie RTX 40 con benchmarks en 4K, consumo y escenarios reales para streamers y estudios creativos.</p>
+                        <a class="blog-card__link" href="#">Leer más</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-card__media" aria-hidden="true">📋</div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <time class="blog-card__date" datetime="2024-01-05">5 de enero, 2024</time>
+                            <span class="blog-card__category">Tutoriales</span>
+                        </div>
+                        <h3 class="blog-card__title">Cómo elegir la placa base perfecta para tu PC</h3>
+                        <p class="blog-card__excerpt">Revisamos factores clave: chipset, fases de poder, compatibilidad y expandibilidad según diferentes perfiles.</p>
+                        <a class="blog-card__link" href="#">Leer más</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-card__media" aria-hidden="true">🖥️</div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <time class="blog-card__date" datetime="2023-12-28">28 de diciembre, 2023</time>
+                            <span class="blog-card__category">Guías</span>
+                        </div>
+                        <h3 class="blog-card__title">Construye tu PC gaming por menos de $1500</h3>
+                        <p class="blog-card__excerpt">Configuración balanceada con componentes actuales, recomendaciones de compra y consejos para mantener el presupuesto.</p>
+                        <a class="blog-card__link" href="#">Leer más</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-card__media" aria-hidden="true">⚡</div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <time class="blog-card__date" datetime="2023-12-20">20 de diciembre, 2023</time>
+                            <span class="blog-card__category">Overclocking</span>
+                        </div>
+                        <h3 class="blog-card__title">Overclocking seguro para principiantes</h3>
+                        <p class="blog-card__excerpt">Metodología paso a paso, herramientas recomendadas y cómo evitar problemas de estabilidad y temperatura.</p>
+                        <a class="blog-card__link" href="#">Leer más</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-card__media" aria-hidden="true">🚀</div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <time class="blog-card__date" datetime="2023-12-15">15 de diciembre, 2023</time>
+                            <span class="blog-card__category">Tendencias</span>
+                        </div>
+                        <h3 class="blog-card__title">Tendencias de hardware para 2024</h3>
+                        <p class="blog-card__excerpt">Lo que viene en DDR5, PCIe 5.0, enfriamiento y expectativas para estaciones de trabajo creativas.</p>
+                        <a class="blog-card__link" href="#">Leer más</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <span class="blog-emoji">📋</span>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <time class="blog-date" datetime="2024-01-05">5 de Enero, 2024</time>
-                                <span class="blog-category">Tutoriales</span>
-                            </div>
-                            <h3 class="blog-title">Cómo Elegir la Placa Base Perfecta para tu PC</h3>
-                            <p class="blog-excerpt">
-                                Guía detallada para seleccionar la motherboard adecuada según tu procesador, 
-                                necesidades de conectividad y presupuesto. Incluye recomendaciones por rango de precio.
-                            </p>
-                            <a href="#" class="blog-link">Leer más</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <span class="blog-emoji">🖥️</span>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <time class="blog-date" datetime="2023-12-28">28 de Diciembre, 2023</time>
-                                <span class="blog-category">Guías</span>
-                            </div>
-                            <h3 class="blog-title">Construye tu PC Gaming por Menos de $1500</h3>
-                            <p class="blog-excerpt">
-                                Configuración completa paso a paso para armar una PC gaming de alto rendimiento 
-                                sin romper el banco. Incluye lista de componentes y precios actualizados.
-                            </p>
-                            <a href="#" class="blog-link">Leer más</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <span class="blog-emoji">⚡</span>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <time class="blog-date" datetime="2023-12-20">20 de Diciembre, 2023</time>
-                                <span class="blog-category">Overclocking</span>
-                            </div>
-                            <h3 class="blog-title">Overclocking Seguro: Guía para Principiantes</h3>
-                            <p class="blog-excerpt">
-                                Aprende los fundamentos del overclocking de forma segura. Herramientas necesarias, 
-                                configuraciones recomendadas y cómo evitar dañar tus componentes.
-                            </p>
-                            <a href="#" class="blog-link">Leer más</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <span class="blog-emoji">🚀</span>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <time class="blog-date" datetime="2023-12-15">15 de Diciembre, 2023</time>
-                                <span class="blog-category">Tendencias</span>
-                            </div>
-                            <h3 class="blog-title">Tendencias de Hardware para 2024</h3>
-                            <p class="blog-excerpt">
-                                Predicciones sobre las tecnologías que marcarán el 2024: DDR5, PCIe 5.0, 
-                                refrigeración líquida y el futuro del gaming en 4K.
-                            </p>
-                            <a href="#" class="blog-link">Leer más</a>
-                        </div>
-                    </article>
+        <section class="blog-cta">
+            <div class="blog-cta__wrapper">
+                <div class="blog-cta__content">
+                    <p class="blog-cta__eyebrow">¿Necesitas ayuda?</p>
+                    <h2 class="blog-cta__title">Transforma estos insights en un plan personalizado</h2>
+                    <p class="blog-cta__subtitle">Nuestro equipo puede auditar tu infraestructura actual y proponerte mejoras inmediatas.</p>
+                </div>
+                <div class="blog-cta__actions">
+                    <a class="button button--primary" href="contact.html">Hablar con un especialista</a>
+                    <a class="button button--ghost" href="servicios.html">Ver servicios</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">TechComponents</h3>
-                    <p class="footer-text">Especialistas en componentes de computador de alta calidad.</p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Redes Sociales</h4>
-                    <ul class="social-links">
-                        <li><a href="#" class="social-link">Facebook</a></li>
-                        <li><a href="#" class="social-link">Twitter</a></li>
-                        <li><a href="#" class="social-link">Instagram</a></li>
-                        <li><a href="#" class="social-link">YouTube</a></li>
-                    </ul>
-                </div>
+    <footer class="landing-footer">
+        <div class="landing-footer__inner">
+            <div class="landing-footer__about">
+                <a class="landing-footer__logo" href="index.html">TechComponents</a>
+                <p class="landing-footer__text">Arquitecturas de hardware de alto rendimiento diseñadas con estándares de ingeniería.</p>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2024 TechComponents. Todos los derechos reservados.</p>
+            <div class="landing-footer__links">
+                <h3 class="landing-footer__title">Navegación</h3>
+                <ul class="landing-footer__nav-list">
+                    <li class="landing-footer__nav-item">Inicio</li>
+                    <li class="landing-footer__nav-item">Sobre nosotros</li>
+                    <li class="landing-footer__nav-item">Servicios</li>
+                    <li class="landing-footer__nav-item">Galería</li>
+                    <li class="landing-footer__nav-item">Blog</li>
+                    <li class="landing-footer__nav-item">Contacto</li>
+                </ul>
+            </div>
+            <div class="landing-footer__social">
+                <h3 class="landing-footer__title">Redes</h3>
+                <ul class="landing-footer__social-list">
+                    <li class="landing-footer__social-item">LinkedIn</li>
+                    <li class="landing-footer__social-item">Twitter</li>
+                    <li class="landing-footer__social-item">YouTube</li>
+                    <li class="landing-footer__social-item">Instagram</li>
+                </ul>
+            </div>
+            <div class="landing-footer__legal">
+                <h3 class="landing-footer__title">Atención</h3>
+                <p class="landing-footer__text">support@techcomponents.com<br>+1 (555) 123-TECH</p>
+                <p class="landing-footer__text">© 2024 TechComponents. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

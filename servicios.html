@@ -4,215 +4,223 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Servicios - TechComponents</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/hero.css">
+    <link rel="stylesheet" href="css/blocks/services.css">
+    <link rel="stylesheet" href="css/blocks/pricing.css">
+    <link rel="stylesheet" href="css/blocks/contact.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
 </head>
-<body>
-    <!-- Header con navegación principal -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="site-logo">TechComponents</h1>
-                <nav class="site-nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="nav-link">Inicio</a></li>
-                        <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
-                        <li><a href="gallery.html" class="nav-link">Galería</a></li>
-                        <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
-                        <li><a href="blog.html" class="nav-link">Blog</a></li>
-                        <li><a href="contact.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
+<body class="landing-page">
+    <header class="landing-header">
+        <div class="landing-header__inner">
+            <a class="landing-header__logo" href="index.html">TechComponents</a>
+            <nav class="primary-nav landing-header__nav" aria-label="Navegación principal">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="index.html">Inicio</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="about.html">Sobre nosotros</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link primary-nav__link--active" href="servicios.html">Servicios</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="gallery.html">Galería</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="blog.html">Blog</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="landing-header__actions">
+                <a class="button button--primary" href="contact.html">Solicita un diagnóstico</a>
             </div>
         </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="main-content">
-        <!-- Sección de servicios -->
-        <section class="services-section">
-            <div class="container">
-                <h2 class="page-title">Nuestros Servicios</h2>
-                <p class="services-intro">Ofrecemos una amplia gama de servicios especializados en tecnología y componentes de computador</p>
-                
-                <div class="services-grid">
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <span class="service-emoji">🔧</span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Ensamblaje de PCs</h3>
-                            <p class="service-description">Montaje profesional de computadoras personalizadas según tus necesidades específicas.</p>
-                            <ul class="service-features">
-                                <li>Configuración gaming</li>
-                                <li>Workstations profesionales</li>
-                                <li>PCs de oficina</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <span class="service-emoji">⚡</span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Optimización de Sistemas</h3>
-                            <p class="service-description">Mejora el rendimiento de tu computadora con técnicas de overclocking y optimización.</p>
-                            <ul class="service-features">
-                                <li>Overclocking seguro</li>
-                                <li>Optimización de memoria</li>
-                                <li>Configuración de BIOS</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <span class="service-emoji">🛠️</span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Mantenimiento Técnico</h3>
-                            <p class="service-description">Servicio de mantenimiento preventivo y correctivo para mantener tu PC en óptimas condiciones.</p>
-                            <ul class="service-features">
-                                <li>Limpieza profunda</li>
-                                <li>Actualización de drivers</li>
-                                <li>Diagnóstico completo</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <span class="service-emoji">💡</span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Consultoría Técnica</h3>
-                            <p class="service-description">Asesoramiento especializado para elegir los componentes más adecuados para tu proyecto.</p>
-                            <ul class="service-features">
-                                <li>Análisis de necesidades</li>
-                                <li>Presupuestos personalizados</li>
-                                <li>Recomendaciones técnicas</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <span class="service-emoji">🛡️</span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Garantía Extendida</h3>
-                            <p class="service-description">Protección adicional para tus componentes con nuestro servicio de garantía extendida.</p>
-                            <ul class="service-features">
-                                <li>Cobertura ampliada</li>
-                                <li>Reparación sin costo</li>
-                                <li>Soporte prioritario</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <span class="service-emoji">🚚</span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Entrega e Instalación</h3>
-                            <p class="service-description">Servicio completo de entrega e instalación en tu domicilio o oficina.</p>
-                            <ul class="service-features">
-                                <li>Instalación en sitio</li>
-                                <li>Configuración inicial</li>
-                                <li>Capacitación básica</li>
-                            </ul>
-                        </div>
-                    </article>
+    <main class="landing-main">
+        <section class="hero-banner hero-banner--soft">
+            <div class="hero-banner__overlay" aria-hidden="true"></div>
+            <div class="hero-banner__content">
+                <p class="hero-banner__eyebrow">Catálogo de soluciones</p>
+                <h1 class="hero-banner__title">Servicios integrales para construir y mantener tu infraestructura</h1>
+                <p class="hero-banner__subtitle">Desde el asesoramiento inicial hasta el soporte post-venta, entregamos hardware optimizado y listo para producir.</p>
+                <div class="hero-banner__actions">
+                    <a class="button button--primary" href="contact.html">Habla con nosotros</a>
+                    <a class="button button--ghost" href="#planes">Ver planes</a>
                 </div>
             </div>
         </section>
 
-        <!-- Ejemplos de formularios y componentes -->
-        <section class="examples-section">
-            <div class="container">
-                <h2 class="section-title">Ejemplos de Configuración</h2>
-                
-                <!-- Formulario de consulta -->
-                <div class="example-form">
-                    <h3 class="example-title">Solicitar Consulta Técnica</h3>
-                    <form class="consultation-form">
-                        <div class="form-group">
-                            <label for="budget" class="form-label">Presupuesto aproximado:</label>
-                            <select id="budget" name="budget" class="form-select" required>
-                                <option value="">Selecciona un rango</option>
-                                <option value="500-1000">$500 - $1,000</option>
-                                <option value="1000-2000">$1,000 - $2,000</option>
-                                <option value="2000-3000">$2,000 - $3,000</option>
-                                <option value="3000+">$3,000+</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="usage" class="form-label">Uso principal:</label>
-                            <select id="usage" name="usage" class="form-select" required>
-                                <option value="">Selecciona el uso</option>
-                                <option value="gaming">Gaming</option>
-                                <option value="work">Trabajo profesional</option>
-                                <option value="creative">Creatividad/Edición</option>
-                                <option value="office">Oficina</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="preferences" class="form-label">Preferencias adicionales:</label>
-                            <textarea id="preferences" name="preferences" class="form-textarea" placeholder="Describe cualquier requisito específico..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">Solicitar Consulta</button>
-                    </form>
-                </div>
+        <section class="services">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Servicios</p>
+                <h2 class="section-heading__title">Todo lo necesario para un hardware confiable</h2>
+                <p class="section-heading__description">Integramos conocimientos de ingeniería, gaming competitivo y operaciones empresariales para cubrir cada etapa del ciclo de vida.</p>
+            </div>
+            <div class="services__grid">
+                <article class="service-card">
+                    <div class="service-card__icon" aria-hidden="true">🔧</div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Ensamblaje profesional</h3>
+                        <p class="service-card__description">Diseños personalizados para gaming, estudios creativos y estaciones de trabajo exigentes.</p>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Validación eléctrica y térmica</li>
+                            <li class="service-card__item">Cableado premium y gestión de flujo de aire</li>
+                            <li class="service-card__item">Documentación técnica detallada</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon" aria-hidden="true">⚡</div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Optimización de rendimiento</h3>
+                        <p class="service-card__description">Overclocking seguro, perfiles XMP y ajuste de firmware para sacar el máximo provecho.</p>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Stress tests continuos</li>
+                            <li class="service-card__item">Curvas de ventilación personalizadas</li>
+                            <li class="service-card__item">Reportes comparativos de benchmarks</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon" aria-hidden="true">🛠️</div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Mantenimiento gestionado</h3>
+                        <p class="service-card__description">Plan preventivo que evita downtime y prolonga la vida útil de cada componente.</p>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Limpieza profunda programada</li>
+                            <li class="service-card__item">Actualización de drivers y BIOS</li>
+                            <li class="service-card__item">Mesa de ayuda 24/7</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon" aria-hidden="true">💡</div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Consultoría estratégica</h3>
+                        <p class="service-card__description">Acompañamos desde la planificación hasta la adopción de nuevas tecnologías.</p>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Análisis de cargas de trabajo</li>
+                            <li class="service-card__item">Roadmap tecnológico anual</li>
+                            <li class="service-card__item">Capacitaciones remotas y presenciales</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon" aria-hidden="true">🛡️</div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Garantía extendida</h3>
+                        <p class="service-card__description">Cobertura ampliada y soporte prioritario con piezas de reemplazo inmediatas.</p>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Stock reservado de componentes críticos</li>
+                            <li class="service-card__item">RMA gestionado directamente con fabricantes</li>
+                            <li class="service-card__item">SLA de respuesta en 4 horas</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon" aria-hidden="true">🚚</div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Implementación onsite</h3>
+                        <p class="service-card__description">Entrega, instalación y configuración lista para trabajar el mismo día.</p>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Instalación y prueba de red</li>
+                            <li class="service-card__item">Migración de perfiles y datos</li>
+                            <li class="service-card__item">Capacitación de usuarios finales</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                <!-- Lista de artículos recomendados -->
-                <div class="recommendations">
-                    <h3 class="example-title">Componentes Recomendados</h3>
-                    <ul class="recommendations-list">
-                        <li class="recommendation-item">
-                            <strong>Procesador:</strong> Intel Core i7-13700K o AMD Ryzen 7 7700X
-                        </li>
-                        <li class="recommendation-item">
-                            <strong>Gráfica:</strong> RTX 4070 Ti o RX 7800 XT
-                        </li>
-                        <li class="recommendation-item">
-                            <strong>RAM:</strong> 32GB DDR5-5600
-                        </li>
-                        <li class="recommendation-item">
-                            <strong>Almacenamiento:</strong> SSD NVMe 1TB + HDD 2TB
-                        </li>
-                        <li class="recommendation-item">
-                            <strong>Fuente:</strong> 850W 80+ Gold modular
-                        </li>
+        <section class="pricing" id="planes">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Planes flexibles</p>
+                <h2 class="section-heading__title">Selecciona el plan ideal para tu equipo</h2>
+                <p class="section-heading__description">Todos los planes incluyen ensamblaje certificado, pruebas de estrés y soporte remoto inmediato.</p>
+            </div>
+            <div class="pricing__grid">
+                <article class="pricing-card">
+                    <header class="pricing-card__header">
+                        <h3 class="pricing-card__name">Starter</h3>
+                        <p class="pricing-card__price"><span class="pricing-card__currency">$</span>899</p>
+                        <p class="pricing-card__label">Ideal para oficinas modernas</p>
+                    </header>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">Procesadores Intel Core i5 / Ryzen 5</li>
+                        <li class="pricing-card__feature">16 GB DDR5 dual channel</li>
+                        <li class="pricing-card__feature">Almacenamiento híbrido 512 GB NVMe + 1 TB HDD</li>
+                        <li class="pricing-card__feature">Soporte remoto en 4 h</li>
                     </ul>
-                </div>
+                    <div class="pricing-card__actions">
+                        <a class="button button--ghost" href="contact.html">Solicitar propuesta</a>
+                    </div>
+                </article>
+
+                <article class="pricing-card pricing-card--featured">
+                    <header class="pricing-card__header">
+                        <span class="pricing-card__badge">Más elegido</span>
+                        <h3 class="pricing-card__name">Pro Studio</h3>
+                        <p class="pricing-card__price"><span class="pricing-card__currency">$</span>1,799</p>
+                        <p class="pricing-card__label">Potencia para creativos y streaming</p>
+                    </header>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">CPU Intel Core i9 / Ryzen 9 de última generación</li>
+                        <li class="pricing-card__feature">GPU RTX 4080 / RX 7900 XTX</li>
+                        <li class="pricing-card__feature">64 GB DDR5 + almacenamiento NVMe 2 TB</li>
+                        <li class="pricing-card__feature">Monitoreo proactivo 24/7</li>
+                    </ul>
+                    <div class="pricing-card__actions">
+                        <a class="button button--primary" href="contact.html">Reservar diagnóstico</a>
+                    </div>
+                </article>
+
+                <article class="pricing-card">
+                    <header class="pricing-card__header">
+                        <h3 class="pricing-card__name">Enterprise</h3>
+                        <p class="pricing-card__price"><span class="pricing-card__currency">$</span>3,299</p>
+                        <p class="pricing-card__label">Infraestructura escalable para empresas</p>
+                    </header>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">Clusters multi-GPU configurables</li>
+                        <li class="pricing-card__feature">Redundancia RAID y backup automatizado</li>
+                        <li class="pricing-card__feature">SLA con respuesta en 2 h</li>
+                        <li class="pricing-card__feature">Consultoría onsite mensual</li>
+                    </ul>
+                    <div class="pricing-card__actions">
+                        <a class="button button--ghost" href="contact.html">Agendar reunión</a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">TechComponents</h3>
-                    <p class="footer-text">Especialistas en componentes de computador de alta calidad.</p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Redes Sociales</h4>
-                    <ul class="social-links">
-                        <li><a href="#" class="social-link">Facebook</a></li>
-                        <li><a href="#" class="social-link">Twitter</a></li>
-                        <li><a href="#" class="social-link">Instagram</a></li>
-                        <li><a href="#" class="social-link">YouTube</a></li>
-                    </ul>
-                </div>
+    <footer class="landing-footer">
+        <div class="landing-footer__inner">
+            <div class="landing-footer__about">
+                <a class="landing-footer__logo" href="index.html">TechComponents</a>
+                <p class="landing-footer__text">Arquitecturas de hardware de alto rendimiento diseñadas con estándares de ingeniería.</p>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2024 TechComponents. Todos los derechos reservados.</p>
+            <div class="landing-footer__links">
+                <h3 class="landing-footer__title">Navegación</h3>
+                <ul class="landing-footer__nav-list">
+                    <li class="landing-footer__nav-item">Inicio</li>
+                    <li class="landing-footer__nav-item">Sobre nosotros</li>
+                    <li class="landing-footer__nav-item">Servicios</li>
+                    <li class="landing-footer__nav-item">Galería</li>
+                    <li class="landing-footer__nav-item">Blog</li>
+                    <li class="landing-footer__nav-item">Contacto</li>
+                </ul>
+            </div>
+            <div class="landing-footer__social">
+                <h3 class="landing-footer__title">Redes</h3>
+                <ul class="landing-footer__social-list">
+                    <li class="landing-footer__social-item">LinkedIn</li>
+                    <li class="landing-footer__social-item">Twitter</li>
+                    <li class="landing-footer__social-item">YouTube</li>
+                    <li class="landing-footer__social-item">Instagram</li>
+                </ul>
+            </div>
+            <div class="landing-footer__legal">
+                <h3 class="landing-footer__title">Atención</h3>
+                <p class="landing-footer__text">support@techcomponents.com<br>+1 (555) 123-TECH</p>
+                <p class="landing-footer__text">© 2024 TechComponents. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
