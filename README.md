@@ -32,7 +32,7 @@
 - **`css/components/buttons.css`**: botón reutilizable (`button`, `button--primary`, `button--ghost`). La variante `--ghost` ahora incluye fondo translúcido claro para mejorar la legibilidad sobre héroes con imagen difuminada.
 - **Archivos en `css/blocks/`**: cada bloque cuenta con su archivo dedicado (`header.css`, `hero.css`, `features.css`, `testimonials.css`, `pricing.css`, `contact.css`, `footer.css`, `about.css`, `services.css`, `gallery.css`, `blog.css`). Esto facilita localizar reglas, aplicar tree-shaking y escalar hacia un design system.
 
-## Recomendaciones futuras
+## Recomendaciones para futuras modificaciones
 
 - Documentar cualquier nuevo bloque o variación en este archivo para mantener consistencia.
 - Importar únicamente los estilos necesarios en cada página para optimizar carga.
